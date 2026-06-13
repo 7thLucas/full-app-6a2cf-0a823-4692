@@ -65,11 +65,23 @@ Five persistent, categorized logs feed Cerebro's causal inference engine in real
 
 ---
 
+## Platform & Access Model
+- **Primary Platform**: Mobile phone — Axon is a phone app, not a web dashboard
+- **UI Paradigm**: Floating bubble overlay — Axon lives as a persistent presence on the device, visible and accessible from any screen without leaving the current app
+- **Permission Model**: Opening the floating bubble grants Axon permission to observe and interact with the screen; closing it revokes access — consent is gestural and contextual
+- **Active Agent**: Axon runs as a live agent on the phone — not a dormant chat app, but a persistent presence that can be invoked at any moment during any activity
+- **Cross-Screen Access**: Summon Axon from any context — browsing, coding, reading, watching — and the agent acts on what is currently visible or in progress
+- **Real-World Execution**: Agents can go online, write code, build artifacts, carry out research, and perform generalized tasks — initiated from wherever the user is, on whatever screen they're on
+- **Build Path**: Phase 1 — mobile-optimized web app (PWA, installable on home screen); Phase 2 — native system overlay wrapper (Android accessibility layer / iOS) for true cross-app floating bubble
+
+---
+
 ## Target User
 - Technical builders and developers wanting an AI system that learns their patterns over time
 - Power users wanting parallel autonomous execution across domains
 - Builders wanting a persistent AI teammate that compounds knowledge from every session
 - Primarily a personal / single-user system — the builder is also the primary user
+- Someone who wants their AI agent with them on their phone, active across every screen they use
 
 ---
 
