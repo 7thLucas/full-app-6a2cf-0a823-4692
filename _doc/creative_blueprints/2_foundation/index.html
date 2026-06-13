@@ -1,0 +1,90 @@
+<style>
+  .mode-landscape .sl-split { flex-direction: row; gap: 1.25rem; }
+  .mode-portrait .sl-split { flex-direction: column; gap: 1rem; }
+  .mode-landscape .sl-problem { width: 50%; }
+  .mode-landscape .sl-solution { width: 50%; }
+  .mode-portrait .sl-problem { width: 100%; }
+  .mode-portrait .sl-solution { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <p class="text-teal-600 text-xs font-bold tracking-widest uppercase mb-1">Why OmniAgent Exists</p>
+      <h2 class="text-slate-900 font-black leading-tight" style="font-size: 1.9rem; letter-spacing: -0.02em;">The Gap in AI Today — and How We Close It</h2>
+    </div>
+
+    <!-- Split panels -->
+    <div class="sl-split flex flex-1">
+
+      <!-- Problem -->
+      <div class="sl-problem bg-slate-900 rounded-2xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-5">
+            <div class="w-5 h-5 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0">
+              <span class="text-white font-bold" style="font-size: 0.6rem;">✕</span>
+            </div>
+            <h3 class="text-white font-bold text-sm tracking-wide uppercase">The Problem</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex gap-3 items-start">
+              <span class="text-red-400 flex-shrink-0 mt-0.5 font-bold">—</span>
+              <span class="text-slate-300 text-sm leading-snug">AI tools don't remember what worked or failed — the same mistakes repeat across every session</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-red-400 flex-shrink-0 mt-0.5 font-bold">—</span>
+              <span class="text-slate-300 text-sm leading-snug">Tasks execute sequentially — one bottleneck stalls the entire workflow</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-red-400 flex-shrink-0 mt-0.5 font-bold">—</span>
+              <span class="text-slate-300 text-sm leading-snug">No agent ever critiques another's output — low-quality results go unchallenged</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-red-400 flex-shrink-0 mt-0.5 font-bold">—</span>
+              <span class="text-slate-300 text-sm leading-snug">Hard-won preferences, decisions, and context disappear the moment the session ends</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 pt-4 border-t border-slate-700">
+          <p class="text-slate-500 text-xs leading-snug">The result: fragmented context, sequential execution, and AI that never grows</p>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-solution bg-teal-600 rounded-2xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-5">
+            <div class="w-5 h-5 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+              <span class="text-teal-600 font-bold" style="font-size: 0.6rem;">✓</span>
+            </div>
+            <h3 class="text-white font-bold text-sm tracking-wide uppercase">OmniAgent</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex gap-3 items-start">
+              <span class="text-teal-200 flex-shrink-0 mt-0.5 font-bold">→</span>
+              <span class="text-white text-sm leading-snug">Mastermind Core logs every preference, success, and failure in five separate, persistent categories</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-teal-200 flex-shrink-0 mt-0.5 font-bold">→</span>
+              <span class="text-white text-sm leading-snug">Left Agent + Right Agent execute in parallel — two sub-tasks at once, every time</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-teal-200 flex-shrink-0 mt-0.5 font-bold">→</span>
+              <span class="text-white text-sm leading-snug">Agents cross-critique each other's work before the Mastermind finalizes — built-in quality control</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-teal-200 flex-shrink-0 mt-0.5 font-bold">→</span>
+              <span class="text-white text-sm leading-snug">One chat interface. One omniscient brain. Context that compounds session over session.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 pt-4 border-t border-teal-500">
+          <p class="text-teal-100 text-xs leading-snug italic">"The octopus keeps 40% of its neurons in the brain, 60% in its arms — OmniAgent is built the same way."</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
