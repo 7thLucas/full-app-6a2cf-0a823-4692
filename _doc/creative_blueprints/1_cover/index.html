@@ -1,0 +1,79 @@
+<style>
+  .mode-landscape .sl-root { flex-direction: row; }
+  .mode-portrait .sl-root { flex-direction: column; }
+  .mode-landscape .sl-left { width: 56%; height: 100%; }
+  .mode-landscape .sl-right { width: 44%; height: 100%; }
+  .mode-portrait .sl-left { width: 100%; flex: 0 0 58%; }
+  .mode-portrait .sl-right { width: 100%; flex: 1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-root flex w-full h-full">
+
+    <!-- Left: content panel -->
+    <div class="sl-left bg-slate-900 flex flex-col justify-between p-10">
+
+      <!-- Badge -->
+      <div>
+        <span class="inline-flex items-center gap-2 border border-teal-500 text-teal-400 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+          ◎ Octopus Architecture
+        </span>
+      </div>
+
+      <!-- Headline block -->
+      <div>
+        <h1 class="text-white font-black leading-none" style="font-size: 2.8rem; letter-spacing: -0.03em;">
+          One Mind.<br/>Two Agents.<br/>Infinite Reach.
+        </h1>
+        <div class="w-10 h-0.5 bg-teal-500 mt-6 mb-5"></div>
+        <p class="text-slate-400 text-sm leading-relaxed" style="max-width: 340px;">
+          The octopus-inspired AI orchestration system — a Mastermind at the center, Left &amp; Right Agents acting at the edges, built for any task.
+        </p>
+        <div class="flex gap-4 mt-6">
+          <div class="text-center">
+            <p class="text-white font-black text-xl">1</p>
+            <p class="text-slate-500 text-xs tracking-wide">Mastermind</p>
+          </div>
+          <div class="w-px bg-slate-700"></div>
+          <div class="text-center">
+            <p class="text-white font-black text-xl">2</p>
+            <p class="text-slate-500 text-xs tracking-wide">Agents</p>
+          </div>
+          <div class="w-px bg-slate-700"></div>
+          <div class="text-center">
+            <p class="text-teal-400 font-black text-xl">5</p>
+            <p class="text-slate-500 text-xs tracking-wide">Memory Logs</p>
+          </div>
+          <div class="w-px bg-slate-700"></div>
+          <div class="text-center">
+            <p class="text-teal-400 font-black text-xl">∞</p>
+            <p class="text-slate-500 text-xs tracking-wide">Task Domains</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-right relative overflow-hidden bg-slate-950">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=cinematic+digital+artwork+of+a+single+large+glowing+teal+neural+node+at+center+connected+by+elegant+flowing+curved+lines+resembling+octopus+tentacles+to+two+smaller+symmetrical+nodes%2C+deep+dark+navy+background%2C+teal+and+cyan+glow%2C+minimal+clean+sci-fi+aesthetic%2C+ultra+detail+8k"
+        class="w-full h-full object-cover"
+        alt="Octopus-inspired neural network — Mastermind Core with Left and Right Agents"
+        loading="eager"
+      />
+      <!-- Left-edge blend -->
+      <div class="absolute inset-y-0 left-0 w-8" style="background: linear-gradient(to right, #0f172a, transparent);"></div>
+      <!-- Corner label -->
+      <div class="absolute bottom-8 right-8 text-right">
+        <p class="text-teal-400 text-xs font-bold tracking-widest uppercase">Mastermind Core</p>
+        <p class="text-slate-500 text-xs mt-0.5">Left Agent · Right Agent</p>
+      </div>
+    </div>
+
+  </div>
+</section>
