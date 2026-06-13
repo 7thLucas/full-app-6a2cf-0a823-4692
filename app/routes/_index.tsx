@@ -1,10 +1,13 @@
 import { AxonProvider } from "~/axon/store";
-import { AxonDashboard } from "~/axon/components/AxonDashboard";
+import { ScreenProvider } from "~/axon/screen-store";
+import { AxonMobileApp } from "~/axon/components/AxonMobileApp";
 
 export default function IndexPage() {
   return (
     <AxonProvider>
-      <AxonDashboard />
+      <ScreenProvider>
+        <AxonMobileApp />
+      </ScreenProvider>
     </AxonProvider>
   );
 }
