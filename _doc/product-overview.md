@@ -74,6 +74,16 @@ Five persistent, categorized logs feed Cerebro's causal inference engine in real
 - **Real-World Execution**: Agents can go online, write code, build artifacts, carry out research, and perform generalized tasks — initiated from wherever the user is, on whatever screen they're on
 - **Build Path**: Phase 1 — mobile-optimized web app (PWA, installable on home screen); Phase 2 — native system overlay wrapper (Android accessibility layer / iOS) for true cross-app floating bubble
 
+## UX Architecture (Phase 1 — Built)
+The app uses a **chat-first, background-layers** model. The Mastermind conversation is the only thing the user sees by default. Everything else is one tap away and stays completely out of view until needed.
+
+- **Chat (home)** — Full-screen Mastermind conversation. Clean, no competing panels. A subtle badge appears when agents are active; tap it to jump to Activity.
+- **Activity tab** — Left and Right agent cards, stacked. Status, current task, progress, last actions. Only relevant when tasks are running.
+- **Cerebro tab** — Projection and reflection displays; causal chain visualization. Inspect the system's reasoning on demand.
+- **Logs tab** — Five category tabs (Preferences · Wins · Failures · Decisions · General). Timestamped, monospace, fully browsable. The debugging and audit surface — there when something goes wrong, invisible otherwise.
+
+Navigation: fixed bottom tab bar with four icons. Screen real estate is preserved for the thing that matters — the conversation.
+
 ---
 
 ## Target User
