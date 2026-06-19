@@ -29,7 +29,7 @@ The reasoning layer that sits above the Mastermind. Responsible for:
 
 ### Layer 2 — Mastermind Core (Executive Layer)
 The sole interface the user interacts with. Responsible for:
-- **Direct Chat Interface** — the user communicates only with the Mastermind
+- **Direct Chat Interface** — the user communicates only with the Mastermind. The Mastermind is intended to answer the user directly with a single response synthesized from the Left and Right Agents' work — not merely expose internal artifacts. *(Near-term gap: the current build surfaces the agents' cross-critique but does not yet return this direct synthesized reply, nor show each agent's initial output — see Capability Status.)*
 - **Task Decomposition** — for every task, produces an exact step-by-step plan covering everything that needs to be done before any action is taken
 - **Parallel Distribution** — sends sub-tasks to Left Agent and Right Agent simultaneously
 - **Global Awareness** — watches both agents at all times; aware of the full architecture, every component's state, and all logged knowledge
