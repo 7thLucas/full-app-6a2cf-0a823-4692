@@ -5,6 +5,7 @@
 - **Tagline**: One mind. Two agents. Infinite reach.
 - **Mission**: In pursuit of artificial consciousness — not superficial intelligence. Axon is designed for recursive introspection, self-reflection, and forward projection. The goal is a system that genuinely evolves: autonomous, self-healing, and growing with every interaction.
 - **Concept**: An octopus-inspired, four-layer multi-agent AI system for autonomous parallel execution, persistent learning, and metacognitive self-evolution across any domain.
+- **End State ("Omni Agent")**: The product the owner is building toward is an *Omni agent* — an AI they can actually deploy to carry out real tasks and perform real work, not just reason and describe. Genuine autonomous task execution is the central purpose and the highest-priority capability. The architecture (planning, parallel agents, critique, memory) is the reasoning substrate; the Omni agent emerges once that substrate gains *hands* (see Capability Status → Path to the Omni Agent).
 - **Tone**: Technical, precise, architecture-forward. Built for power users who want AI that plans, acts, reflects, and learns — not just responds.
 - **Brand Palette**: Dark slate (primary canvas) + teal (accent) — technical, premium, calm.
 
