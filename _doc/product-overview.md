@@ -81,7 +81,7 @@ An honest line between what Axon does now and what is still ahead. This distinct
 **Not built yet (each is a deliberate, bounded capability layer, not magic):**
 - **Live web browsing / search** — requires a search/browse tool integration
 - **External tool use** — requires a tool-calling harness (function calling)
-- **Code execution** — requires a sandboxed runtime; today the system can generate code as text but cannot run it autonomously
+- **Code execution & self-authored skills** — requires a sandboxed runtime *plus* a persistent skill library; today the system can generate code as text but cannot run it, save it, or reuse it. The target is not ephemeral sandbox runs but tools and code Axon writes once and keeps as permanent, callable capabilities it can reach for again
 - **True self-improvement** — "learn and grow" today means memory-conditioned adaptation via the logs, not a model retraining its own weights
 
 **Near-term UX features (next up, not yet built — secondary to the Omni-agent path):**
