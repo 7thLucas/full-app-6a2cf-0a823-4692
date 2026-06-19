@@ -95,7 +95,7 @@ An honest line between what Axon does now and what is still ahead. This distinct
 - **Permission Model**: Opening the floating bubble grants Axon permission to observe and interact with the screen; closing it revokes access — consent is gestural and contextual
 - **Active Agent**: Axon runs as a live agent on the phone — not a dormant chat app, but a persistent presence that can be invoked at any moment during any activity
 - **Cross-Screen Access**: Summon Axon from any context — browsing, coding, reading, watching — and the agent acts on what is currently visible or in progress
-- **Real-World Execution**: Agents can go online, write code, build artifacts, carry out research, and perform generalized tasks — initiated from wherever the user is, on whatever screen they're on
+- **Real-World Execution (roadmap)**: The target end state — agents go online, write and run code, build artifacts, and carry out research from wherever the user is. Today the system reasons, plans, critiques, and remembers; live online action, tool use, and code execution are roadmap capability layers (see Capability Status)
 - **Build Path**: Phase 1 — mobile-optimized web app (PWA, installable on home screen); Phase 2 — native system overlay wrapper (Android accessibility layer / iOS) for true cross-app floating bubble
 
 ## UX Architecture (Phase 1 — Built)
