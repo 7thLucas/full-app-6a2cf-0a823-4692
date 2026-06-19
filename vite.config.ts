@@ -21,6 +21,24 @@ export default defineConfig({
       },
     ],
   },
+  // Pre-bundle the client deps the app reaches transitively (the 4-screen
+  // Axon UI pulls axios via the orchestrator -> @qb/agentic -> api.client).
+  // Without this, Vite discovers axios lazily on first task interaction and
+  // does a mid-session "optimized dependencies changed. reloading", which can
+  // leave two copies of react-router's DataRouterContext in the page and trip
+  // "useLoaderData must be used within a data router" inside the root
+  // ErrorBoundary. Forcing them into the initial optimize pass avoids that.
+  optimizeDeps: {
+    include: [
+      "react",
+      "react-dom",
+      "react-router",
+      "axios",
+      "lucide-react",
+      "clsx",
+      "tailwind-merge",
+    ],
+  },
   ssr: {
     noExternal: [
       // "@radix-ui",
