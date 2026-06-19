@@ -84,9 +84,16 @@ An honest line between what Axon does now and what is still ahead. This distinct
 - **Code execution** — requires a sandboxed runtime; today the system can generate code as text but cannot run it autonomously
 - **True self-improvement** — "learn and grow" today means memory-conditioned adaptation via the logs, not a model retraining its own weights
 
-**Near-term features (next up, not yet built):**
+**Near-term UX features (next up, not yet built — secondary to the Omni-agent path):**
 - **Direct synthesized response** — Mastermind returns one direct answer to the user, built from the synthesis of Left + Right outputs
 - **Full-chain transparency** — surface each agent's *initial* output → the cross-critique → the final synthesis, not just the cross-critique slice
+
+**Path to the Omni Agent (priority roadmap):**
+The owner's #1 priority is autonomous, real-world task execution — ranked above the two near-term UX features. The honest path to that end state is *giving Axon hands*, not retraining its weights. Weight retraining is explicitly **not** the lever: it is not feasible in this stack, and it is not how working autonomous agents operate — they execute via tools and adapt via memory, not by retraining mid-task. The capability layers, in priority order:
+1. **Tool use (function-calling harness)** — the foundation; lets Axon actually *do* things rather than describe them. Build first.
+2. **Live web access (browsing / search)** — lets Axon work from current reality, not stale memory.
+3. **Code execution (sandboxed runtime)** — lets Axon write *and run* work, then verify its own output.
+4. **Memory-conditioned adaptation (already seeded)** — the five persistent logs are the real, buildable form of "self-improvement": Axon gets sharper at *this user's* tasks because it remembers what worked and what upset them. This compounds over time and is the honest substitute for weight retraining.
 
 ---
 
