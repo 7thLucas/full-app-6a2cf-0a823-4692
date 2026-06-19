@@ -54,7 +54,8 @@ Five persistent, categorized logs feed Cerebro's causal inference engine in real
 
 ---
 
-## Supported Task Domains
+## Target Task Domains (Design Scope)
+The domains Axon is architected to serve. Some are live today as reasoning capabilities; others are roadmap that require concrete capability layers to be built (see Capability Status).
 - Software development and coding
 - Online research and web browsing / surfing
 - General task execution and automation
@@ -62,6 +63,29 @@ Five persistent, categorized logs feed Cerebro's causal inference engine in real
 - Marketing and content creation
 - System monitoring and reporting
 - Any generalized agentic task
+
+---
+
+## Capability Status — Today vs. Roadmap
+An honest line between what Axon does now and what is still ahead. This distinction is core truth: the pitch must not present roadmap capability as delivered.
+
+**Working today (multi-agent reasoning + memory):**
+- Mastermind decomposes a task into a step-by-step plan
+- Left and Right Agents execute sub-tasks in parallel
+- Agents cross-critique each other's output
+- Cerebro projects forward and reflects backward over logged experience
+- Five persistent logs give the system real, memory-conditioned adaptation across sessions
+- Chat-first mobile UX with Activity, Cerebro, and Logs tabs
+
+**Not built yet (each is a deliberate, bounded capability layer, not magic):**
+- **Live web browsing / search** — requires a search/browse tool integration
+- **External tool use** — requires a tool-calling harness (function calling)
+- **Code execution** — requires a sandboxed runtime; today the system can generate code as text but cannot run it autonomously
+- **True self-improvement** — "learn and grow" today means memory-conditioned adaptation via the logs, not a model retraining its own weights
+
+**Near-term features (next up, not yet built):**
+- **Direct synthesized response** — Mastermind returns one direct answer to the user, built from the synthesis of Left + Right outputs
+- **Full-chain transparency** — surface each agent's *initial* output → the cross-critique → the final synthesis, not just the cross-critique slice
 
 ---
 
