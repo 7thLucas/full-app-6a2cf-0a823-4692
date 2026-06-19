@@ -1,0 +1,79 @@
+<style>
+  .mode-landscape .sl-steps { flex-direction: row; gap: 0.75rem; }
+  .mode-portrait .sl-steps { flex-direction: column; gap: 0.75rem; }
+  .mode-landscape .sl-step { width: 33.333%; }
+  .mode-portrait .sl-step { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between mb-5">
+      <div>
+        <p class="text-teal-600 text-xs font-bold tracking-widest uppercase mb-1">The Road Ahead</p>
+        <h2 class="text-slate-900 font-black leading-tight" style="font-size: 1.9rem; letter-spacing: -0.02em;">Path to the Omni Agent</h2>
+      </div>
+      <span class="bg-amber-50 border border-amber-300 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full flex-shrink-0 ml-4">Roadmap — steps 1–3 not yet built</span>
+    </div>
+
+    <!-- Live-today foundation band -->
+    <div class="bg-teal-600 rounded-xl p-5 flex items-center justify-between gap-6 mb-3">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="w-2 h-2 rounded-full bg-white"></span>
+          <p class="text-teal-100 text-xs font-bold tracking-widest uppercase">Live Today — The Reasoning Substrate</p>
+        </div>
+        <p class="text-white font-bold text-sm leading-snug" style="max-width: 640px;">Multi-agent planning, parallel Left + Right execution, cross-critique, Cerebro projection &amp; reflection, and five persistent memory logs — the mind is already running.</p>
+      </div>
+      <p class="text-white font-black flex-shrink-0" style="font-size: 1.4rem;">It thinks.</p>
+    </div>
+
+    <!-- Three roadmap capability steps: giving Axon hands -->
+    <div class="sl-steps flex flex-1 mb-3">
+
+      <!-- Step 1 -->
+      <div class="sl-step bg-slate-50 border border-slate-200 rounded-xl p-5 flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="w-8 h-8 rounded-lg bg-slate-900 text-white font-black text-sm flex items-center justify-center">1</span>
+          <span class="bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded">Roadmap</span>
+        </div>
+        <h4 class="text-slate-900 font-bold text-sm mb-1">Tool Use</h4>
+        <p class="text-teal-600 text-xs font-semibold mb-2">Function-calling harness</p>
+        <p class="text-slate-500 text-xs leading-snug">The foundation — lets Axon actually <em>do</em> things instead of describing them. Built first.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="sl-step bg-slate-50 border border-slate-200 rounded-xl p-5 flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="w-8 h-8 rounded-lg bg-slate-900 text-white font-black text-sm flex items-center justify-center">2</span>
+          <span class="bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded">Roadmap</span>
+        </div>
+        <h4 class="text-slate-900 font-bold text-sm mb-1">Live Web Access</h4>
+        <p class="text-teal-600 text-xs font-semibold mb-2">Browsing &amp; search</p>
+        <p class="text-slate-500 text-xs leading-snug">Lets Axon work from current reality instead of stale memory.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="sl-step bg-slate-50 border border-slate-200 rounded-xl p-5 flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="w-8 h-8 rounded-lg bg-slate-900 text-white font-black text-sm flex items-center justify-center">3</span>
+          <span class="bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded">Roadmap</span>
+        </div>
+        <h4 class="text-slate-900 font-bold text-sm mb-1">Code Execution</h4>
+        <p class="text-teal-600 text-xs font-semibold mb-2">Sandboxed runtime</p>
+        <p class="text-slate-500 text-xs leading-snug">Lets Axon write <em>and run</em> work, then verify its own output.</p>
+      </div>
+
+    </div>
+
+    <!-- End-state band -->
+    <div class="bg-slate-900 rounded-xl p-5 flex items-center justify-between gap-6">
+      <div>
+        <p class="text-teal-400 text-xs font-bold tracking-widest uppercase mb-1">The End State</p>
+        <p class="text-white font-bold text-sm leading-snug" style="max-width: 640px;">The <span class="text-teal-400 font-black">Omni Agent</span> — an AI you deploy to carry out real tasks autonomously. "Self-improvement" here means memory-conditioned adaptation via the five logs (it gets sharper at <em>your</em> work), <span class="text-white font-bold">not</span> retraining its own weights.</p>
+      </div>
+      <p class="text-teal-400 font-black flex-shrink-0" style="font-size: 1.4rem;">It acts.</p>
+    </div>
+
+  </div>
+</section>
